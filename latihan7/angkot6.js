@@ -13,4 +13,3 @@ for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
         console.log('Angkot No. ' + noAngkot + ' Tidak beroperasi');
     }
 }
-
