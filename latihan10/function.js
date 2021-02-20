@@ -44,7 +44,7 @@ function bagi(a,b) {
     return total;
 }
 
-for (let i = 0; i < arrayUrut.length; i++) {
+for (var i = 0; i < arrayUrut.length; i++) {
     var x = bagi(arrayUrut[i],2);
     console.log('array hasil bagi ke-'+ i +' : ' + x);
 }
