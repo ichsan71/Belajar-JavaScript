@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portal</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="judul" class="w3-teal w3-mobile">
+        <br>
+        <h1 style="text-align: center;">PORTAL GAME PASCAL INDONESIA</h1>
+        <br>
+        <div class="w3-bar w3-black">
+            <button class=" dude w3-bar-item w3-button w3-mobile" onclick="pindah('Home')">Home</button>
+            <button class=" dude w3-bar-item w3-button w3-mobile" onclick="pindah('Profile')">Profile</button>
+            
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Game <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <button class="dude w3-bar-item w3-button w3-mobile" onclick="pindah('CMD Heroes')">CMD Heroes</button>
+                    <button class="dude w3-bar-item w3-button w3-mobile" onclick="pindah('Monster')">Monster RPG</button>
+                </div>
+            </div>
+            <div class="w3-right">
+                <input type="text" class="w3-bar-item w3-input" placeholder="Search..">
+                <a href="#" class="w3-bar-item w3-button w3-green">Go</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="Home" class="w3-container Menu">
+        <h2 class=" w3-animate-fading">
+            
+        </h2>
+        <p class="p1 w3-animate-bottom w3-serif w3-animate-bottom">
+            Selamat datang di Portal Game Pascal Indonesia. Ini adalah website untuk berbagi Source Code atau Exe file dari Game Pascal buatan Kami. <br> 
+            Semua Game disini Free. So Enjoy the game and keep support us :)
+        </p>
+        <ul>
+          <li>san</li>
+          <li>sin</li>
+          <li>sun</li>
+        </ul>
+    </div>
+    <div id="Profile" class="w3-container Menu" style="display:none">
+        <h2 class="w3-animate-zoom">Profile</h2>
+        <p class=" w3-animate-bottom">
+            
+            <div class="w3-row-padding w3-margin-top ">
+                <div class="w3-third w3-animate-left">
+                  <div class="w3-card">
+                    <img src="img/rsz_3ichsan.jpg" style=" width:100%" >
+                    <div class="w3-container">
+                      <h5>Ichsan</h5>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w3-third w3-animate-bottom">
+                  <div class="w3-card">
+                    <img src="img/rsz_1vikri_frediansyah-1.jpg" style="width:100%;">
+                    <div class="w3-container">
+                      <h5>Vikri</h5>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="w3-third w3-animate-right">
+                  <div class="w3-card">
+                    <img src="img/rsz_whos_nextq.jpg" style="width:100%">
+                    <div class="w3-container">
+                      <h5>Who's Next ?</h5>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+            
+        </p>
+        
+        <div class=" w3-animate-bottom w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
+            <p class="p2"><i>"Do it like snake, Silent but deadly"</i></p>
+        </div>
+    </div>
+    <div id="CMD Heroes" class="w3-container Menu " style="display:none">
+        <h2 class="w3-animate-zoom">CMD Heroes</h2>
+        <p class="w3-animate-bottom">CMD Heroes adalah sebuah game RPG yang menyediakan beberapa Heroes pilihan untuk melawan bot </p>
+    </div>
+    <div id="Monster" class="w3-container Menu " style="display:none">
+        <h2 class="w3-animate-zoom">Monster</h2>
+        <p class="w3-animate-bottom">Monster game adalah Game bertipe RPG, kalian bisa membuat monster mu sendiri dan akan melawan monster bot... Mainkan game Monster mu dan upgrade kekuatan mu !</p>
+    </div>
+    
+    <!-- <script>
+    function menu(namaMenu) {
+        var i;
+        var x = document.getElementsByClassName("Menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namaMenu).style.display = "block";
+    }
+    </script> -->
+
+ <script src="script.js"></script>   
+</body>
+</html>
