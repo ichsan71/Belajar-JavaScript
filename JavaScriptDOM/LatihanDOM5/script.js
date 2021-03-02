@@ -41,6 +41,8 @@ function putar() {
 }
 
 const pilihan = document.querySelectorAll('li img');
+let j = 0;
+let k = 0;
 pilihan.forEach(function (pil) {
     pil.addEventListener('click', function() {
         const pilcom = getPilcom();
@@ -57,11 +59,22 @@ pilihan.forEach(function (pil) {
             // info
             const info = document.querySelector('.info');
             info.innerHTML = hasil;
+
+            if (hasil == 'MENANG!') {
+                j = j+1;
+                const h1 = document.querySelector('.dude');
+                h1.innerHTML = j;
+                // alert(' ke -' + j);
+                return j;
+                }
+            else if (hasil == 'KALAH!') {
+                k = k+1;
+                const h1 = document.querySelector('.dudekom');
+                h1.innerHTML = k;
+                // alert(' ke -' + j);
+                return k;
+            }
             }, 1000);
-        // if (hasil == 'MENANG!') {
-        //     let j = j+1;
-        //     const h2 = document.querySelector('.dude');
-        //     h2.innerHTML = j;
-        // }
+        
     });
 });
